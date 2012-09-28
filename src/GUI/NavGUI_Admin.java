@@ -55,7 +55,7 @@ public class NavGUI_Admin extends JFrame {
 	 */
 	public NavGUI_Admin() {
 		setTitle("Certificate Generation System - Admin");
-		setMinimumSize(new Dimension(950, 640));
+		setMinimumSize(new Dimension(800, 600));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();

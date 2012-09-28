@@ -5,7 +5,7 @@
 package GUI;
 
 import java.awt.Color;
-import java.awt.Cursor;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -15,12 +15,12 @@ import java.awt.event.MouseMotionAdapter;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextPane;
+import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 
 @SuppressWarnings("serial")
-public class Button extends JPanel{
-	
+public class Button extends JPanel {
+
 	public Button(String urlIcon, String nameButton) {
 		setOpaque(false);
 		setBackground(new Color(0, 0, 0, 0));
@@ -38,38 +38,27 @@ public class Button extends JPanel{
 			add(lblIcon, gbc_lblIcon);
 		}
 
-		JTextPane edit = new JTextPane();
+		JLabel label = new JLabel(nameButton);
 		{
-			edit.setFocusable(false);
-			edit.setOpaque(false);
-			edit.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-			edit.addMouseListener(new changeMouseAdapter(this));
-			edit.addMouseMotionListener(new changeMouseMotionAdapter(this));
-			edit.setBackground(null);
-			edit.setContentType("text/html");
-			edit.setEditable(false);
-			edit.setText("<html><body><div text-align: center; padding:0;>"
-					+ nameButton);
+			label.setFont(new Font("SansSerif", Font.BOLD, 12));
+			label.setHorizontalAlignment(SwingConstants.CENTER);
 			GridBagConstraints gbc_edit = new GridBagConstraints();
 			gbc_edit.fill = GridBagConstraints.BOTH;
 			gbc_edit.gridx = 0;
 			gbc_edit.gridy = 1;
-			add(edit, gbc_edit);
+			add(label, gbc_edit);
 		}
-		
+
 		addMouseListener(new changeMouseAdapter(this));
 		addMouseMotionListener(new changeMouseMotionAdapter(this));
 	}
 
-	
-	public void paintComponent(Graphics g)
-    {
-        g.setColor( getBackground() );
-        g.fillRect(0, 0, getWidth(), getHeight());
-        super.paintComponent(g);
-    }
-	
-	
+	public void paintComponent(Graphics g) {
+		g.setColor(getBackground());
+		g.fillRect(0, 0, getWidth(), getHeight());
+		super.paintComponent(g);
+	}
+
 	class changeMouseAdapter extends MouseAdapter {
 		public JPanel panel;
 
