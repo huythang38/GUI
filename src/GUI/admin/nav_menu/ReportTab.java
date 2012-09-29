@@ -19,7 +19,7 @@ public class ReportTab extends JPanel {
 
 	public ReportTab() {
 		setAlignmentX(Component.RIGHT_ALIGNMENT);
-		setLayout(new FlowLayout(FlowLayout.LEADING, 10, 10));
+		setLayout(new FlowLayout(FlowLayout.LEADING, 10, 5));
 
 		Button btGenerateCertificate = new Button("lib/images/certificate.png",
 				"Generate Certificate");
@@ -29,7 +29,7 @@ public class ReportTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("generateCertificate");
 			}
 		});
-		btGenerateCertificate.setPreferredSize(new Dimension(125, 90));
+		btGenerateCertificate.setPreferredSize(new Dimension(125, 80));
 		add(btGenerateCertificate);
 	}
 	

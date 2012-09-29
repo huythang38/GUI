@@ -66,7 +66,7 @@ public class NavGUI_Admin extends JFrame {
 		GridBagLayout gbl_contentPane = new GridBagLayout();
 		{
 			gbl_contentPane.columnWidths = new int[] { 0, 0 };
-			gbl_contentPane.rowHeights = new int[] { 150, 0 };
+			gbl_contentPane.rowHeights = new int[] { 130, 0 };
 			gbl_contentPane.columnWeights = new double[] { 1, Double.MIN_VALUE };
 			gbl_contentPane.rowWeights = new double[] { 0.0, 1.0 };
 			contentPane.setLayout(gbl_contentPane);

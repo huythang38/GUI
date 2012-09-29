@@ -20,7 +20,7 @@ public class AccountTab extends JPanel{
 	public AccountTab(){
 		setAlignmentX(Component.RIGHT_ALIGNMENT);
 		setLayout(new FlowLayout(FlowLayout.LEADING, 10,
-				10));
+				5));
 
 		Button btChangeStatus = new Button(
 				"lib/images/user_status.png", "Change Status");
@@ -30,7 +30,7 @@ public class AccountTab extends JPanel{
 				NavGUI_Admin.navPanel.showContent("changeStatus");
 			}
 		});
-		btChangeStatus.setPreferredSize(new Dimension(120, 90));
+		btChangeStatus.setPreferredSize(new Dimension(120, 80));
 		add(btChangeStatus);
 
 		Button btChangeRole = new Button("lib/images/user_role.png",
@@ -41,7 +41,7 @@ public class AccountTab extends JPanel{
 				NavGUI_Admin.navPanel.showContent("changeRole");
 			}
 		});
-		btChangeRole.setPreferredSize(new Dimension(110, 90));
+		btChangeRole.setPreferredSize(new Dimension(110, 80));
 		add(btChangeRole);
 
 		Button btResetPass = new Button("lib/images/user_pass.png",
@@ -52,7 +52,7 @@ public class AccountTab extends JPanel{
 				NavGUI_Admin.navPanel.showContent("resetPass");
 			}
 		});
-		btResetPass.setPreferredSize(new Dimension(120, 90));
+		btResetPass.setPreferredSize(new Dimension(120, 80));
 		add(btResetPass);
 	}
 	

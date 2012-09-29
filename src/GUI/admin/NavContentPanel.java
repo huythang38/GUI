@@ -4,6 +4,7 @@ import java.awt.CardLayout;
 
 import javax.swing.JPanel;
 
+import GUI.admin.nav_panel.AccountChangeStatusPanel;
 import GUI.admin.nav_panel.HomePanel;
 
 @SuppressWarnings("serial")
@@ -45,7 +46,7 @@ public class NavContentPanel extends JPanel {
 
 		// tab Account
 		{
-			JPanel contentChangeStatus = new JPanel();
+			AccountChangeStatusPanel contentChangeStatus = new AccountChangeStatusPanel();
 			add(contentChangeStatus, "changeStatus");
 
 			JPanel contentChangeRole = new JPanel();

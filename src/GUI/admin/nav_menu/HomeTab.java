@@ -32,12 +32,12 @@ public class HomeTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("home");
 			}
 		});
-		btHome.setPreferredSize(new Dimension(87, 90));
+		btHome.setPreferredSize(new Dimension(90, 80));
 
 		JPanel panelHelp = new JPanel();
 		panelHelp.setOpaque(false);
 		add(panelHelp);
-		panelHelp.setPreferredSize(new Dimension(215, 110));
+		panelHelp.setPreferredSize(new Dimension(215, 90));
 		panelHelp.setBorder(new TitledBorder(new LineBorder(new Color(184, 207, 229)), "Help", TitledBorder.LEFT, TitledBorder.TOP, null, SystemColor.textHighlight));
 		panelHelp.setLayout(null);
 		{
@@ -48,7 +48,7 @@ public class HomeTab extends JPanel {
 					NavGUI_Admin.navPanel.showContent("help");
 				}
 			});
-			btHelp.setBounds(11, 13, 87, 90);
+			btHelp.setBounds(11, 13, 87, 70);
 			panelHelp.add(btHelp);
 
 			Button btAbout = new Button("lib/images/about.png", "About CSG!");
@@ -58,7 +58,7 @@ public class HomeTab extends JPanel {
 					NavGUI_Admin.navPanel.showContent("about");
 				}
 			});
-			btAbout.setBounds(105, 13, 100, 90);
+			btAbout.setBounds(105, 13, 100, 70);
 			panelHelp.add(btAbout);
 		}
 		
@@ -70,7 +70,7 @@ public class HomeTab extends JPanel {
 
 					}
 				});
-				btLogout.setPreferredSize(new Dimension(87, 90));
+				btLogout.setPreferredSize(new Dimension(90, 80));
 				
 						Button btExit = new Button("lib/images/exit.png", "Exit");
 						add(btExit);
@@ -80,7 +80,7 @@ public class HomeTab extends JPanel {
 								System.exit(0);
 							}
 						});
-						btExit.setPreferredSize(new Dimension(87, 90));
+						btExit.setPreferredSize(new Dimension(90, 80));
 	}
 
 	public void paintComponent(Graphics g) {

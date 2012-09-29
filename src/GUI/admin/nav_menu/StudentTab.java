@@ -18,7 +18,7 @@ import GUI.NavGUI_Admin;
 public class StudentTab extends JPanel {
 
 	public StudentTab() {
-		setLayout(new FlowLayout(FlowLayout.LEADING, 10, 10));
+		setLayout(new FlowLayout(FlowLayout.LEADING, 10, 5));
 		setAlignmentX(Component.RIGHT_ALIGNMENT);
 		
 		Button btViewInfoStudent = new Button("lib/images/student_48.png",
@@ -29,7 +29,7 @@ public class StudentTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("viewInfoStudent");
 			}
 		});
-		btViewInfoStudent.setPreferredSize(new Dimension(150, 90));
+		btViewInfoStudent.setPreferredSize(new Dimension(150, 80));
 		add(btViewInfoStudent);
 
 		Button btCreateStudent = new Button("lib/images/student_add.png",
@@ -40,7 +40,7 @@ public class StudentTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("createStudent");
 			}
 		});
-		btCreateStudent.setPreferredSize(new Dimension(120, 90));
+		btCreateStudent.setPreferredSize(new Dimension(120, 80));
 		add(btCreateStudent);
 
 		Button btUpdateStudent = new Button("lib/images/student_update.png",
@@ -51,7 +51,7 @@ public class StudentTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("updateStudent");
 			}
 		});
-		btUpdateStudent.setPreferredSize(new Dimension(125, 90));
+		btUpdateStudent.setPreferredSize(new Dimension(125, 80));
 		add(btUpdateStudent);
 
 		Button btInputMarks = new Button("lib/images/input_mark.png",
@@ -62,7 +62,7 @@ public class StudentTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("inputMark");
 			}
 		});
-		btInputMarks.setPreferredSize(new Dimension(110, 90));
+		btInputMarks.setPreferredSize(new Dimension(110, 80));
 		add(btInputMarks);
 
 		Button btEnterPayment = new Button("lib/images/enter_money.png",
@@ -73,7 +73,7 @@ public class StudentTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("enterPayment");
 			}
 		});
-		btEnterPayment.setPreferredSize(new Dimension(120, 90));
+		btEnterPayment.setPreferredSize(new Dimension(120, 80));
 		add(btEnterPayment);
 	}
 	

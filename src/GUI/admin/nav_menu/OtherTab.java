@@ -29,6 +29,7 @@ public class OtherTab extends JPanel {
 	public JScrollPane scrollPane;
 	public JPanel panel;
 	
+	@SuppressWarnings("unused")
 	public OtherTab() {
 		setLayout(new BorderLayout());
 		scrollPane = new JScrollPane();
@@ -41,12 +42,11 @@ public class OtherTab extends JPanel {
 		panel = new JPanel();
 		panel.setOpaque(false);
 		FlowLayout flowLayout = (FlowLayout) panel.getLayout();
-		flowLayout.setVgap(10);
 
 		Button btCreateClass = new Button("lib/images/class_add.png",
 				"Create Class");
 		btCreateClass.setMinimumSize(new Dimension(100, 105));
-		btCreateClass.setPreferredSize(new Dimension(100, 90));
+		btCreateClass.setPreferredSize(new Dimension(100, 80));
 		btCreateClass.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent arg0) {
@@ -64,7 +64,7 @@ public class OtherTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("changeClass");
 			}
 		});
-		btChangeClass.setPreferredSize(new Dimension(110, 90));
+		btChangeClass.setPreferredSize(new Dimension(110, 80));
 		panel.add(btChangeClass);
 
 		JSeparator separator = new JSeparator();
@@ -82,7 +82,7 @@ public class OtherTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("createCourse");
 			}
 		});
-		btCreateCourse.setPreferredSize(new Dimension(110, 90));
+		btCreateCourse.setPreferredSize(new Dimension(110, 80));
 		panel.add(btCreateCourse);
 
 		Button btChangeCourse = new Button("lib/images/course_change.png",
@@ -93,7 +93,7 @@ public class OtherTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("changeCourse");
 			}
 		});
-		btChangeCourse.setPreferredSize(new Dimension(120, 90));
+		btChangeCourse.setPreferredSize(new Dimension(120, 80));
 		panel.add(btChangeCourse);
 
 		JSeparator separator_1 = new JSeparator();
@@ -111,7 +111,7 @@ public class OtherTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("createTuition");
 			}
 		});
-		btCreateTuition.setPreferredSize(new Dimension(110, 90));
+		btCreateTuition.setPreferredSize(new Dimension(110, 80));
 		panel.add(btCreateTuition);
 
 		Button btChangeTuition = new Button("lib/images/tuition_change.png",
@@ -122,7 +122,7 @@ public class OtherTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("changeTuition");
 			}
 		});
-		btChangeTuition.setPreferredSize(new Dimension(120, 90));
+		btChangeTuition.setPreferredSize(new Dimension(120, 80));
 		panel.add(btChangeTuition);
 
 		JSeparator separator_2 = new JSeparator();
@@ -140,7 +140,7 @@ public class OtherTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("createSubject");
 			}
 		});
-		btCreateSubject.setPreferredSize(new Dimension(120, 90));
+		btCreateSubject.setPreferredSize(new Dimension(120, 80));
 		panel.add(btCreateSubject);
 
 		Button btChangeSubject = new Button("lib/images/subject_change.png",
@@ -151,7 +151,7 @@ public class OtherTab extends JPanel {
 				NavGUI_Admin.navPanel.showContent("changeSubject");
 			}
 		});
-		btChangeSubject.setPreferredSize(new Dimension(120, 90));
+		btChangeSubject.setPreferredSize(new Dimension(120, 80));
 		panel.add(btChangeSubject);
 		
 //		scrollPane.
