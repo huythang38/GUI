@@ -5,6 +5,7 @@ import java.awt.CardLayout;
 import javax.swing.JPanel;
 
 import GUI.admin.nav_panel.AccountChangeStatusPanel;
+import GUI.admin.nav_panel.AccountResetPassword;
 import GUI.admin.nav_panel.HomePanel;
 
 @SuppressWarnings("serial")
@@ -49,10 +50,10 @@ public class NavContentPanel extends JPanel {
 			AccountChangeStatusPanel contentChangeStatus = new AccountChangeStatusPanel();
 			add(contentChangeStatus, "changeStatus");
 
-			JPanel contentChangeRole = new JPanel();
-			add(contentChangeRole, "changeRole");
+//			JPanel contentChangeRole = new JPanel();
+//			add(contentChangeRole, "changeRole");
 
-			JPanel contentResetPass = new JPanel();
+			AccountResetPassword contentResetPass = new AccountResetPassword();
 			add(contentResetPass, "resetPass");
 		}
 

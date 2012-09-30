@@ -33,16 +33,16 @@ public class AccountTab extends JPanel{
 		btChangeStatus.setPreferredSize(new Dimension(120, 80));
 		add(btChangeStatus);
 
-		Button btChangeRole = new Button("lib/images/user_role.png",
-				"Change Role");
-		btChangeRole.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mousePressed(MouseEvent arg0) {
-				NavGUI_Admin.navPanel.showContent("changeRole");
-			}
-		});
-		btChangeRole.setPreferredSize(new Dimension(110, 80));
-		add(btChangeRole);
+//		Button btChangeRole = new Button("lib/images/user_role.png",
+//				"Change Role");
+//		btChangeRole.addMouseListener(new MouseAdapter() {
+//			@Override
+//			public void mousePressed(MouseEvent arg0) {
+//				NavGUI_Admin.navPanel.showContent("changeRole");
+//			}
+//		});
+//		btChangeRole.setPreferredSize(new Dimension(110, 80));
+//		add(btChangeRole);
 
 		Button btResetPass = new Button("lib/images/user_pass.png",
 				"Reset Password");
